@@ -1,0 +1,18 @@
+extends base
+block content 
+    if user 
+        h1 Welcome To the world of Blog 
+        section.container-pop 
+            div 
+                a(href="/getblog") GET 
+            div 
+                a(href="/updateblog") UPDATE 
+            div 
+                a.delete(href="/api/v1/user/deleteuser") DELETE
+    else
+        section.container 
+            h1.main-view This Is A Form  Application
+            h1.main-view1 To know More Click the Form or Login and Access This APIs 
+            h1.main-view2 Have a Wounderful Day !
+
+            

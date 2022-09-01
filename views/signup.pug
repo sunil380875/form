@@ -1,0 +1,49 @@
+extends base 
+
+block content 
+
+    h1.login-heading Fill The form
+
+    section.signup_container 
+        div.label 
+            label(for="") Firstname: 
+        div.label 
+            input.form.form-input1(type="text" value=`sunil` size="50") 
+        div.label 
+            label(for="") Lastname: 
+        div.label 
+            input.form.form-input2(type="text" size="50")
+        div.label 
+            label(for="") Email: 
+        div.label 
+            input.form.form-input3(type="text" size="50")
+        div.label 
+            label(for="") Password: 
+        div.label 
+            input.form.form-input4(type="text" size="50")
+        div.label 
+            label(for="") PasswordConfirm: 
+        div.label 
+            input.form.form-input5(type="text" size="50")
+        div.label 
+            label(for="") Mobile Number: 
+        div.label 
+            input.form.form-input6(type="text" size="50")
+        div.label 
+            label(for="") Address: 
+        div.label 
+            input.form.form-input7(type="text" size="50")
+        div.label 
+            label(for="") City: 
+        select.form.form-input8
+            option(value="kolkatta") Kolkatta
+            option(value="mumbai") Mumbai
+        div.label
+            label(for="") Gender: 
+        select.form.form-input9
+            option(value="male") Male
+            option(value="female") Female
+        div
+        div
+            button.submit1 Submit
+            

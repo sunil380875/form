@@ -1,0 +1,40 @@
+extends base 
+
+block content 
+    if user
+        h1.login-heading Fill The form
+
+        section.signup_container 
+            div.label 
+                label(for="") Firstname: 
+            div.label 
+                input.form.form-inputA(type="text" value=`${user.firstName}` size="50")
+            div.label 
+                label(for="") Lastname: 
+            div.label 
+                input.form.form-inputB(type="text" value=`${user.lastName}` size="50")
+            div.label 
+                label(for="") Email: 
+            div.label 
+                input.form.form-inputC(type="text" value=`${user.email}` size="50")
+           
+            div.label 
+                label(for="") Mobile Number: 
+            div.label 
+                input.form.form-inputD(type="text" value=`${user.mobileNumber}` size="50")
+            div.label 
+                label(for="") Address: 
+            div.label 
+                input.form.form-inputE(type="text" value=`${user.address}` size="50")
+            div.label 
+                label(for="") City: 
+            select.form.form-inputF
+                option(value="kolkatta")= user.city
+                option(value="mumbai")= user.city
+            div.label
+                label(for="") Gender: 
+            select.form.form-inputG
+                option(value="male")= user.gender
+                option(value="female")=user.gender
+            div
+           

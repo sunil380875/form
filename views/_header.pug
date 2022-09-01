@@ -1,0 +1,16 @@
+header 
+
+    nav 
+        ul.nav 
+            if user
+                li 
+                    a.nav__el--logout  Logout
+                    |       
+                li 
+                    span.nav__el--logout= user.email
+            else
+                li 
+                    a.nav-link(href="/signup") Form
+                li 
+                    a.nav-link(href="/login") Login 
+                
